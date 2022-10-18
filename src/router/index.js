@@ -1,15 +1,45 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import FormsPage from '../components/pages/FormPage.vue'
+import TypographiPage from '../components/pages/TypographiPage.vue'
+import CalendarPage from '../components/pages/CalendarPage.vue'
+import SlidePage from '../components/pages/SliderPage.vue'
+import TablePage from '../components/pages/TablePage.vue'
+import PickerPage from '../components/pages/PickerPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
     component: HomeView
   },
+  {
+    path: '/forms',
+    component: FormsPage
+  },
+  {
+    path: '/typographi',
+    component: TypographiPage
+  },
+  {
+    path: '/calendar',
+    component: CalendarPage
+  },
+  {
+    path: '/slider',
+    component: SlidePage
+  },
+  {
+    path: '/table',
+    component: TablePage
+  },
+  {
+    path: '/pickers',
+    component: PickerPage
+  },
+
   // {
   //   path: '/about',
   //   name: 'about',
